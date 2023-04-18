@@ -1,0 +1,9 @@
+steps:
+  - group: "group name"
+    label: "group label"
+    key: "group_key"
+    steps:
+      - label: "$BUILDKITE_GROUP_LABEL - step 1"
+        command: "echo 'step 1'"
+      - label: "$$BUILDKITE_GROUP_LABEL - step 2"
+        command: "echo 'step 2'"
